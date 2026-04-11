@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thiago Bernardes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+background:#0c0c0c;
+color:#f4f1ea;
+font-family:'Libre Baskerville', serif;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+h1{
+font-family:'Playfair Display', serif;
+font-size:60px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#c9b37e;
+font-size:18px;
+margin-bottom:30px;
+}
+
+.lang{
+position:absolute;
+top:25px;
+right:40px;
+cursor:pointer;
+font-size:14px;
+}
+
+nav a{
+margin:0 15px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#c9b37e;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+line-height:1.8;
+}
+
+h2{
+font-family:'Playfair Display';
+color:#c9b37e;
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+</style>
+
+<script>
+
+function changeLang(lang){
+
+document.querySelectorAll("[data-lang]").forEach(el=>{
+el.style.display="none"
+})
+
+document.querySelectorAll("[data-lang='"+lang+"']").forEach(el=>{
+el.style.display="block"
+})
+
+}
+
+window.onload=function(){
+changeLang('pt')
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="lang">
+<span onclick="changeLang('pt')">PT</span> |
+<span onclick="changeLang('en')">EN</span>
+</div>
+
+<header>
+
+<h1>Thiago Bernardes</h1>
+
+<div class="subtitle" data-lang="pt">
+Tubista · compositor · educador
+</div>
+
+<div class="subtitle" data-lang="en">
+Tubist · composer · educator
+</div>
+
+<nav>
+
+<a href="#bio">Bio</a>
+<a href="#agenda">Agenda</a>
+<a href="#media">Media</a>
+<a href="#ensino">Teaching</a>
+<a href="#contato">Contact</a>
+
+</nav>
+
+</header>
+
+<section id="bio">
+
+<h2>Biografia</h2>
+
+<p data-lang="pt">
+
+Thiago Bernardes é tubista, compositor e educador brasileiro com atuação na música instrumental contemporânea, no jazz e na criação afro-atlântica. Formado pela EMESP Tom Jobim, Escola do Auditório Ibirapuera e Berklee College of Music.
+
+Participou de importantes festivais como o Festival Internacional de Campos do Jordão e o BMW Jazz Festival, além de apresentações em palcos como Sala São Paulo e Casa de Francisca.
+
+</p>
+
+<p data-lang="en">
+
+Thiago Bernardes is a Brazilian tubist, composer and educator working across contemporary instrumental music, jazz and Afro-Atlantic creative practices. He studied at EMESP Tom Jobim, Escola do Auditório Ibirapuera and Berklee College of Music.
+
+He has performed at major venues and festivals including Sala São Paulo, Casa de Francisca, Festival Internacional de Campos do Jordão and BMW Jazz Festival.
+
+</p>
+
+</section>
+
+<section id="agenda">
+
+<h2>Agenda</h2>
+
+<p>Abr 2026 — Casa de Francisca — São Paulo</p>
+<p>Jun 2026 — Sala São Paulo — São Paulo</p>
+<p>New dates coming soon</p>
+
+</section>
+
+<section id="media">
+
+<h2>Media</h2>
+
+<p>Insira aqui seus vídeos do YouTube substituindo VIDEO_ID.</p>
+
+<iframe width="100%" height="400"
+src="https://www.youtube.com/embed/VIDEO_ID"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section id="ensino">
+
+<h2 data-lang="pt">Ensino</h2>
+<h2 data-lang="en">Teaching</h2>
+
+<p data-lang="pt">
+
+Atua como educador em projetos de formação musical, masterclasses e atividades pedagógicas voltadas à criação musical, prática de conjunto e improvisação.
+
+</p>
+
+<p data-lang="en">
+
+Active as an educator in music training programs, masterclasses and artistic residencies focused on ensemble practice, improvisation and creative music development.
+
+</p>
+
+</section>
+
+<section id="contato">
+
+<h2 data-lang="pt">Contato</h2>
+<h2 data-lang="en">Contact</h2>
+
+<p>
+
+seuemail@email.com
+
+</p>
+
+</section>
+
+<footer>
+
+© Thiago Bernardes
+
+</footer>
+
+</body>
+</html>
